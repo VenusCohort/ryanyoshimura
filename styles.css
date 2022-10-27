@@ -3,7 +3,9 @@ html {
 	width: 100vw;
 	animation-name: wall;
 	animation-duration: 5s;
-	animation-iteration-count: infinite;
+	/*animation-iteration-count: infinite;*/
+	animation-iteration-count: 1;
+
 }
 div{
 	align-self: auto;
