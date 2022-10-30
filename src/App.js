@@ -1,14 +1,30 @@
 import React from 'react';
 import './App.css';
-import {Home} from "./components/Home";
+import {Home} from "./pages/Home";
+import Navbar from "./Navbar";
+import {Projects} from "./pages/Projects";
+import {Info} from "./pages/Info";
 
 
 function App(){
-    return(
-        <div className="container">
-            <Home/>
-        </div>
-    )
+    let component
+    switch(window.location.pathname){
+       case "/":
+           component = <Home />
+           break
+       case "/projects":
+           component = <Projects />
+           break
+       case "/info":
+           component = <Info />
+           break
+   }
+   return (
+       <>
+           <Navbar />
+           {component}
+       </>
+   )
 }
 
 export default App;
