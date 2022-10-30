@@ -7,10 +7,10 @@
 import React, {Component} from 'react';
 
 
-export class Home extends Component{
+export class Info extends Component{
     render() {
         return (
-            <div className="App">
+            <div className="infoPage">
                 <header className="App-header">
                     {/*<img src={logo} className="App-logo" alt="logo" />*/}
                     <p>
@@ -22,7 +22,7 @@ export class Home extends Component{
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Home Page!!!
+                        Info Page!!!
                     </a>
                 </header>
             </div>
