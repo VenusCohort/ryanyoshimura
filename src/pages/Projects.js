@@ -1,9 +1,8 @@
 // import logo from "../logo.svg";
 // import React from "@types/react";
 // import React from 'react';
-// import logo from '/src/logo.svg';
-// import '../App.css';
-// import '../App.css'
+// import logo from 'src/logo.svg';
+// import 'src/App.css';
 import React, {Component} from 'react';
 
 
@@ -13,6 +12,7 @@ export class Projects extends Component{
             <div className="projectsPage">
                 <header className="App-header">
                     {/*<img src={logo} className="App-logo" alt="logo" />*/}
+
                     <p>
                         Edit <code>src/App.js</code> and save to reload.
                     </p>
