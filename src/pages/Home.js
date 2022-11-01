@@ -5,13 +5,14 @@
 // import '../App.css'
 // import './App.css';
 import React, {Component} from 'react';
+import "../styling/Home.css";
 
 
 export class Home extends Component{
     render() {
         return (
             <div className="homePage">
-                <header className="App-header">
+                <header>
                     {/*<img src={logo} className="App-logo" alt="logo" />*/}
                     <a
                         className="App-link"
@@ -19,7 +20,7 @@ export class Home extends Component{
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div>Home Page!!!</div>
+                        <div className="div1">Home Page!!!</div>
                         <div>Things here</div>
 
 
