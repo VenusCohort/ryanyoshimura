@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styling/App.css';
 import {Home} from "./pages/Home";
 import Navbar from "./Navbar";
 import {Projects} from "./pages/Projects";
@@ -18,6 +18,10 @@ function App(){
        case "/info":
            component = <Info />
            break
+        default:
+            component = <Home />
+            break
+
    }
    return (
        <>
