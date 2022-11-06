@@ -5,3 +5,18 @@
 .div1{
     /*color: yellow;*/
 }
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.reactLogo{
+    height: 5rem;
+    width: 5rem;
+}
+.reactLogo2{
+    height: 5rem;
+    width: 5rem;
+}
