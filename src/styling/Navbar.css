@@ -25,18 +25,29 @@ body {
 }
 
 .nav a {
-    color: inherit;
+    /*color: inherit;*/
+    color: #38BDDF;
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0.25rem;
+
+
 }
 .nav li.active {
     background-color: mediumpurple;
 }
-.nav li:hover {
+.nav li:hover .flip-nav-inner{
     background-color: red;
+}
+.flip-nav-inner{
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*text-align: center;*/
+    /*transition: transform 0.8s;*/
+    /*transform-style: preserve-3d;*/
 }
 
 
