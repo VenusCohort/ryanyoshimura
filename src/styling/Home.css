@@ -1,7 +1,8 @@
+
+
 .homePage{
     /*background: yellow;*/
 }
-
 .div1{
     /*color: yellow;*/
 }
@@ -20,10 +21,6 @@
     height: 5rem;
     width: 5rem;
 }
-
-
-
-
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -31,4 +28,33 @@
     to {
         transform: rotate(360deg);
     }
+}
+.projects{
+    border: #38BDDF solid 5px;
+}
+#mainProjectContainer{
+    border: #38BDDF solid 5px;
+
+}
+
+
+
+
+.img_grid_all {
+    height: 1060px;
+    position: relative;
+    rotate: 42deg;
+    transform: rotateY(242deg);
+    /*transform: rotatex(357deg);*/
+    /*{transform: rotateY(360deg) translateX(120px);*/
+    /*}*/
+}
+::selection {
+    background: #000;
+    color: #fff;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hiragino Kaku Gothic ProN','ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3',Meiryo,ãƒ¡ã‚¤ãƒªã‚ª,sans-serif;
 }
