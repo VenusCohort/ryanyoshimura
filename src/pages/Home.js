@@ -6,12 +6,29 @@ import surf from '../img/duck-dive.jpg'
 
 export class Home extends Component{
     render() {
-        function changeBackground(e) {
-            e.target.style.backgroundColor = 'transparent';
-        }
-        function revertBackground(e){
-            e.target.style.backgroundColor = 'black';
-        }
+        // function changeBackground(e) {
+            // e.target.style.backgroundColor = 'transparent';
+            // e.target.style.width = '21.4rem';
+            // e.target.style.height = '33.2rem';
+            // e.target.style.transform = 'rotateX(52deg)';
+            // e.target.style.margin = 'margin-left 1.7rem';
+            // e.target.style.margin = 'margin-top: -28rem';
+            // e.target.style.padding = '1px'
+            // e.target.style = 'z-index: 9';
+            // e.target.style.border = 'solid aqua 0.5px';
+            // width: 21.4rem;
+            // height: 33.2rem;
+            // background: transparent;
+            // transform: rotateX(52deg);
+            // margin-left: 1.7rem;
+            // margin-top: -28rem;
+            // padding: 1px;
+            // z-index: 9;
+            // border: solid aqua 0.5px;
+        // }
+        // function revertBackground(e){
+        //     e.target.style.backgroundColor = 'black';
+        // }
         return (
             <div className="homePage">
                 <header>
@@ -30,32 +47,33 @@ export class Home extends Component{
                         <div id="project-grid-base">
                             <div className="base-container">
                                 <div id="grid-base1" className="grid-base">
-                                    <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
-                                        <div className="project-text">PROJECT 3</div>
-                                    </div>                                </div>
+                                    <img src={surf} alt="img" className="projects-img"/>
+                                    <div className="projects-img-overlay project-text-color">
+                                        <div className="project-text">tsUmami</div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
-                                    <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
-                                        <div className="project-text">PROJECT 3</div>
-                                    </div>                                </div>
+                                    <img src={surf} alt="img" className="projects-img"/>
+                                    <div className="projects-img-overlay project-text-color">
+                                        <div className="project-text">WeatherMap</div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
-                                    <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
-                                        <div className="project-text">PROJECT 3</div>
+                                    <img src={surf} alt="img" className="projects-img"/>
+                                    <div className="projects-img-overlay project-text-color">
+                                        <div className="project-text">Konami-Code</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
-                                    <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
-                                        <div className="project-text">PROJECT 3</div>
-
+                                    <img src={surf} alt="img" className="projects-img" />
+                                    <div className="projects-img-overlay project-text-color">
+                                        <div className="project-text">PROJECT 4</div>
                                     </div>
                                 </div>
                             </div>
@@ -76,4 +94,7 @@ export class Home extends Component{
 //     } )
 // }
 
+// to activate js functions, put as attribute in className
+//also, the JS goes right above the return statement code block
+// onMouseOver={changeBackground} onMouseLeave={revertBackground}
 

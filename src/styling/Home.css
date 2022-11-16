@@ -13,6 +13,7 @@
     align-items: center;
     margin-top: 16vh;
     z-index: 6;
+    width: 100vw;
 }
 .reactLogo{
     height: 5rem;
@@ -22,10 +23,6 @@
     height: 5rem;
     width: 5rem;
 }
-
-
-
-
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
@@ -34,13 +31,13 @@
         transform: rotate(360deg);
     }
 }
-
 #project-grid-base{
     display: flex;
-    flex: 0 0 54rem;
+    flex: 0 0 95vw;
     flex-wrap: wrap;
     position: relative;
     z-index: 7;
+    justify-content: space-evenly;
     /* border: #38BDDF solid 1px;
 }
 #grid-base1 {
@@ -70,41 +67,60 @@
     /*color: #38BDDF;*/
 }
 .grid-base{
-    width: 19.9rem;
-    height: 18.3rem;
+    width: 34.9rem;
+    height: 24.3rem;
     background: #D62D2D;
-    margin-right: 7rem;
+    /*margin-right: 7rem;*/
     margin-bottom: -4rem;
     transform: rotateX(23deg);
     position: relative;
 }
-.img{
-    width: 21rem;
-    height: 20rem;
+.projects-img{
+    width: 34.9rem;
+    height: 24.3rem;
     margin-top: -4vh;
-    margin-left: 1vw;
+    margin-left: 1.6vw;
     position: relative;
     z-index: -1;
+    /*box-shadow: -11px 9px 9px 0 rgb(0 0 0 / 40%);*/
+    /*box-shadow: 10px 10px 10px transparent;*/
+    /*box-shadow: -5px 6px 0px 0px rgb(0 0 0 / 68%);*/
+    box-shadow: -3px 5px 0px 0px rgb(0 0 0 / 68%);
 }
-.img-overlay{
-    width: 21.4rem;
-    height: 33.2rem;
+.projects-img-overlay{
+    width: 34.9rem;
+    height: 39.99rem;
     background: black;
     transform: rotateX(52deg);
-    margin-left: 0.7rem;
-    margin-top: -27rem;
+    margin-left: 1.7rem;
+    margin-top: -32.6rem;
     padding: 1px;
     z-index: 9;
+    border: 1px solid #38BDDF;
+    transition: ease-out 0.3s;
 }
-/*.img-overlay:hover{*/
-/*    background-color: transparent;*/
-/*    color: blue;*/
-/*}*/
+
+.projects-img-overlay:hover{
+    background-color: transparent;
+    width: 34.7rem;
+    height: 38.9rem;
+    transform: rotateX(52deg);
+    margin-left: 2.9rem;
+    margin-top: -33.2rem;
+    padding: 1px;
+    z-index: 9;
+    transition: ease-in-out 0.3s;
+    box-shadow: -6px 10px 0 0 rgb(0 0 0 / 40%);
+}
 
 .base-container{
+    /* transform: rotateY(45deg); */
     position: relative;
     height: 28rem;
-    z-index:8;
+    z-index: 8;
+    /* transform: rotateY(-6deg); */
+    /*transform: rotate3d(1, 1, 1, 18deg);*/
+    transform: rotate3d(66, 14, 3, -25deg);
 }
 
 .project-text{
@@ -114,3 +130,7 @@
     align-content: center;
     margin-top: 15rem;
 }
+body{
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
+}
+
