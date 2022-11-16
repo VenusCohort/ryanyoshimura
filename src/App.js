@@ -6,7 +6,6 @@ import {Projects} from "./pages/Projects";
 import {Info} from "./pages/Info";
 import {Route, Routes} from "react-router-dom"
 
-
 function App(){
     return (
     <>

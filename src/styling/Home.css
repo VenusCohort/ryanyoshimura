@@ -11,6 +11,7 @@
     padding: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: 16vh;
 }
 .reactLogo{
     height: 5rem;
@@ -37,6 +38,8 @@
     display: flex;
     flex: 0 0 54rem;
     flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
     /* border: #38BDDF solid 1px;
 }
 #grid-base1 {
@@ -45,6 +48,7 @@
 
     /*color: #38BDDF;*/
 }
+
 #grid-base2 {
     /*background: #ff00cb;*/
     /*border: #930101 solid 10px;*/
@@ -65,25 +69,45 @@
     /*color: #38BDDF;*/
 }
 .grid-base{
-    width: 20rem;
-    height: 20rem;
+    width: 19.9rem;
+    height: 18.3rem;
     background: #D62D2D;
     margin-right: 7rem;
     margin-bottom: -4rem;
-    transform: rotateX(52deg);
+    transform: rotateX(23deg);
+    position: relative;
 }
-.imgSize{
+.img{
     width: 21rem;
     height: 20rem;
     margin-top: -4vh;
     margin-left: 1vw;
+    position: relative;
+    z-index: -1;
 }
-.img-black-overlay{
-    width: 20rem;
-    height: 20rem;
+.img-overlay{
+    width: 21.4rem;
+    height: 33.2rem;
     background: black;
-    margin-right: 7rem;
-    margin-bottom: -4rem;
     transform: rotateX(52deg);
+    margin-left: 0.7rem;
+    margin-top: -27rem;
+    padding: 1px;
+    z-index: 9;
+}
+.img-overlay:hover{
+    background-color: transparent;
 }
 
+.base-container{
+    position: relative;
+    height: 28rem;
+}
+
+.project-text{
+    color: #38BDDF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15rem;
+}

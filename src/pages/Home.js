@@ -6,6 +6,10 @@ import surf from '../img/duck-dive.jpg'
 
 export class Home extends Component{
     render() {
+        function changeBackground(e) {
+            alert("test")
+            e.target.style.backgroundColor = 'transparent';
+        }
         return (
             <div className="homePage">
                 <header>
@@ -22,23 +26,37 @@ export class Home extends Component{
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
                         {/*<div><img className="reactLogo2"src="https://files.virgool.io/upload/users/24829/posts/m0a581jdk8zj/30ovzh9b1xr0.jpeg" alt="img"></img></div>*/}
                         <div id="project-grid-base">
-                            <div className="">
-                                <div className="img-black-overlay"></div>
-                                <div id="grid-base1" className="grid-base"><img src={surf}  alt="img" className="imgSize"/></div>
+                            <div className="base-container">
+                                <div id="grid-base1" className="grid-base">
+                                    <img src={surf} alt="img" className="img"/>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                        <div className="project-text">PROJECT 3</div>
+                                    </div>                                </div>
                             </div>
-                            <div className="">
-                                <div className="img-black-overlay"></div>
-                                <div id="grid-base2" className="grid-base"><img src={surf}  alt="img" className="imgSize"/></div>
+                            <div className="base-container">
+                                <div id="grid-base2" className="grid-base">
+                                    <img src={surf} alt="img" className="img"/>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                        <div className="project-text">PROJECT 3</div>
+                                    </div>                                </div>
                             </div>
-                            <div className="">
-                                <div className="img-black-overlay"></div>
-                                <div id="grid-base3" className="grid-base"><img src={surf}  alt="img" className="imgSize"/></div>
+                            <div className="base-container">
+                                <div id="grid-base3" className="grid-base">
+                                    <img src={surf} alt="img" className="img"/>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                        <div className="project-text">PROJECT 3</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="">
-                                <div className="img-black-overlay"></div>
-                                <div id="grid-base4" className="grid-base"><img src={surf}  alt="img" className="imgSize"/></div>
-                            </div>
+                            <div className="base-container">
+                                <div id="grid-base4" className="grid-base">
+                                    <img src={surf} alt="img" className="img"/>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                        <div className="project-text">PROJECT 3</div>
 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -47,5 +65,13 @@ export class Home extends Component{
     }
 }
 
+
+//
+// export function projectImgHover(){
+//     let hoverArea = document.querySelector(".img-overlay");
+//     hoverArea.addEventListener("onMouseEnter", function(){
+//         hoverArea.createAttribute("style", "transparent")
+//     } )
+// }
 
 
