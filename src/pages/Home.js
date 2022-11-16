@@ -7,8 +7,10 @@ import surf from '../img/duck-dive.jpg'
 export class Home extends Component{
     render() {
         function changeBackground(e) {
-            alert("test")
             e.target.style.backgroundColor = 'transparent';
+        }
+        function revertBackground(e){
+            e.target.style.backgroundColor = 'black';
         }
         return (
             <div className="homePage">
@@ -29,21 +31,21 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base1" className="grid-base">
                                     <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
                                         <div className="project-text">PROJECT 3</div>
                                     </div>                                </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
                                     <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
                                         <div className="project-text">PROJECT 3</div>
                                     </div>                                </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
                                     <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
                                         <div className="project-text">PROJECT 3</div>
                                     </div>
                                 </div>
@@ -51,7 +53,7 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
                                     <img src={surf} alt="img" className="img"/>
-                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground}>
+                                    <div className="img-overlay project-text-color" onMouseOver={changeBackground} onMouseLeave={revertBackground}>
                                         <div className="project-text">PROJECT 3</div>
 
                                     </div>
