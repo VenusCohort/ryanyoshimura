@@ -2,6 +2,7 @@ import logo from '../logo.svg'
 import React, {Component} from 'react';
 import "../styling/Home.css";
 import surf from '../img/duck-dive.jpg'
+import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
 
 
 export class Home extends Component{
@@ -47,34 +48,42 @@ export class Home extends Component{
                         <div id="project-grid-base">
                             <div className="base-container">
                                 <div id="grid-base1" className="grid-base">
-                                    <img src={surf} alt="img" className="projects-img"/>
-                                    <div className="projects-img-overlay project-text-color">
-                                        <div className="project-text">tsUmami</div>
-                                    </div>
+                                    <img src={tsumamiLandingBg} alt="img" className="projects-img"/>
+                                    <a className="project-anchor-area" href="https://www.tsumami.cooking:8080/landing" target="_blank" rel="noopener noreferrer" >
+                                        <div className="projects-img-overlay project-text-color">
+                                            <div className="project-text"><h2>tsUmami</h2></div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <div className="projects-img-overlay project-text-color">
-                                        <div className="project-text">WeatherMap</div>
-                                    </div>
+                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                        <div className="projects-img-overlay project-text-color">
+                                            <div className="project-text"><h2>WEATHERMAP</h2></div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <div className="projects-img-overlay project-text-color">
-                                        <div className="project-text">Konami-Code</div>
-                                    </div>
+                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                        <div className="projects-img-overlay project-text-color">
+                                            <div className="project-text"><h2>KONAMI-CODE</h2></div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img" />
-                                    <div className="projects-img-overlay project-text-color">
-                                        <div className="project-text">PROJECT 4</div>
-                                    </div>
+                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                        <div className="projects-img-overlay project-text-color">
+                                            <div className="project-text"><h2>JAVA CONSOLE CONTACT MANAGER</h2></div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

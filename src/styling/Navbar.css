@@ -39,7 +39,7 @@ body {
     background-color: mediumpurple;
 }
 .nav li:hover{
-    background-color: red;
+    background-color: #D62D2D;
 }
 .flip-nav-inner{
     /*position: relative;*/

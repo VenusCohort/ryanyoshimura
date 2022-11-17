@@ -1,3 +1,10 @@
+
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+}
+
 .homePage{
     /*background: yellow;*/
 }
@@ -112,6 +119,9 @@
     transition: ease-in-out 0.3s;
     box-shadow: -6px 10px 0 0 rgb(0 0 0 / 40%);
 }
+.projects-img-overlay:hover .project-text{
+    color: transparent;
+}
 
 .base-container{
     /* transform: rotateY(45deg); */
@@ -132,5 +142,9 @@
 }
 body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
+}
+.project-anchor-area{
+    height: 5rem;
+    width: 5rem;
 }
 
