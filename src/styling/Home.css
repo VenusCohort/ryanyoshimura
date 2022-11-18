@@ -103,6 +103,7 @@ a{
     z-index: 9;
     border: 1px solid #38BDDF;
     transition: ease-out 0.3s;
+    cursor: pointer;
 }
 .projects-img-overlay:hover{
     background-color: transparent;

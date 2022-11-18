@@ -7,29 +7,18 @@ import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
 
 export class Home extends Component{
     render() {
-        // function changeBackground(e) {
-            // e.target.style.backgroundColor = 'transparent';
-            // e.target.style.width = '21.4rem';
-            // e.target.style.height = '33.2rem';
-            // e.target.style.transform = 'rotateX(52deg)';
-            // e.target.style.margin = 'margin-left 1.7rem';
-            // e.target.style.margin = 'margin-top: -28rem';
-            // e.target.style.padding = '1px'
-            // e.target.style = 'z-index: 9';
-            // e.target.style.border = 'solid aqua 0.5px';
-            // width: 21.4rem;
-            // height: 33.2rem;
-            // background: transparent;
-            // transform: rotateX(52deg);
-            // margin-left: 1.7rem;
-            // margin-top: -28rem;
-            // padding: 1px;
-            // z-index: 9;
-            // border: solid aqua 0.5px;
-        // }
-        // function revertBackground(e){
-        //     e.target.style.backgroundColor = 'black';
-        // }
+        function goToLinkTsumami(e) {
+            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+        }
+        function goToLinkWeatherMap(e) {
+            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+        }
+        function goToLinkKonamiCode(e) {
+            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+        }
+        function goToLinkJavaConsoletContactManager(e) {
+            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+        }
         return (
             <div className="homePage">
                 <header>
@@ -49,41 +38,33 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base1" className="grid-base">
                                     <img src={tsumamiLandingBg} alt="img" className="projects-img"/>
-                                    <a className="project-anchor-area" href="https://www.tsumami.cooking:8080/landing" target="_blank" rel="noopener noreferrer" >
-                                        <div className="projects-img-overlay project-text-color">
-                                            <div className="project-text"><h2>tsUmami</h2></div>
-                                        </div>
-                                    </a>
+                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkTsumami}>
+                                        <div className="project-text"><h2>tsUmami</h2></div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
-                                        <div className="projects-img-overlay project-text-color">
-                                            <div className="project-text"><h2>WEATHERMAP</h2></div>
-                                        </div>
-                                    </a>
+                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkWeatherMap}>
+                                        <div className="project-text"><h2>WEATHERMAP</h2></div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
-                                        <div className="projects-img-overlay project-text-color">
-                                            <div className="project-text"><h2>KONAMI-CODE</h2></div>
-                                        </div>
-                                    </a>
+                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkKonamiCode}>
+                                        <div className="project-text"><h2>KONAMI-CODE</h2></div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img" />
-                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
-                                        <div className="projects-img-overlay project-text-color">
-                                            <div className="project-text"><h2>JAVA CONSOLE CONTACT MANAGER</h2></div>
-                                        </div>
-                                    </a>
+                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkJavaConsoletContactManager}>
+                                        <div className="project-text"><h2>JAVA CONSOLE CONTACT MANAGER</h2></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
