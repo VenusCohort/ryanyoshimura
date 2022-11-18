@@ -59,7 +59,7 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
                                         <div className="projects-img-overlay project-text-color">
                                             <div className="project-text"><h2>WEATHERMAP</h2></div>
                                         </div>
@@ -69,7 +69,7 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img"/>
-                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
                                         <div className="projects-img-overlay project-text-color">
                                             <div className="project-text"><h2>KONAMI-CODE</h2></div>
                                         </div>
@@ -79,7 +79,7 @@ export class Home extends Component{
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
                                     <img src={surf} alt="img" className="projects-img" />
-                                    <a href="https://google.com" target="_blank" rel="noopener noreferrer" >
+                                    <a className="" href="https://google.com" target="_blank" rel="noopener noreferrer" >
                                         <div className="projects-img-overlay project-text-color">
                                             <div className="project-text"><h2>JAVA CONSOLE CONTACT MANAGER</h2></div>
                                         </div>

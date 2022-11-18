@@ -1,14 +1,17 @@
 
-
 a:link {
     background-color: transparent;
     text-decoration: none;
 }
-
+a{
+    /*display: block;*/
+    /*width:100%;*/
+    /*height:100%;*/
+    /*transform: rotateX(23deg);*/
+}
 .homePage{
     /*background: yellow;*/
 }
-
 .div1{
     /*color: yellow;*/
 }
@@ -50,22 +53,17 @@ a:link {
 #grid-base1 {
     /*background: #ff00cb;*/
     /*border: #930101 solid 10px;*/
-
     /*color: #38BDDF;*/
 }
 
 #grid-base2 {
     /*background: #ff00cb;*/
     /*border: #930101 solid 10px;*/
-
-
     /*color: #38BDDF;*/
 }
 #grid-base3 {
     /*background: #ff00cb;*/
     /*border: #930101 solid 10px;*/
-
-
     /*color: #38BDDF;*/
 }
 #grid-base4 {
@@ -106,7 +104,6 @@ a:link {
     border: 1px solid #38BDDF;
     transition: ease-out 0.3s;
 }
-
 .projects-img-overlay:hover{
     background-color: transparent;
     width: 34.7rem;
@@ -122,7 +119,6 @@ a:link {
 .projects-img-overlay:hover .project-text{
     color: transparent;
 }
-
 .base-container{
     /* transform: rotateY(45deg); */
     position: relative;
@@ -132,7 +128,6 @@ a:link {
     /*transform: rotate3d(1, 1, 1, 18deg);*/
     transform: rotate3d(66, 14, 3, -25deg);
 }
-
 .project-text{
     color: #38BDDF;
     display: flex;
@@ -144,7 +139,7 @@ body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
 }
 .project-anchor-area{
-    height: 5rem;
-    width: 5rem;
+   /*margin-left: 5vw;*/
+    box-sizing: content-box;
 }
 
