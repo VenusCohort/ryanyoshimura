@@ -6,8 +6,7 @@
 // import '../App.css'
 import React, {Component} from 'react';
 
-
-export class Info extends Component{
+export class Contact extends Component{
     render() {
         return (
             <div className="infoPage">

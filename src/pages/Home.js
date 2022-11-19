@@ -8,16 +8,16 @@ import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
 export class Home extends Component{
     render() {
         function goToLinkTsumami(e) {
-            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
         function goToLinkWeatherMap(e) {
-            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
         function goToLinkKonamiCode(e) {
-            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
         function goToLinkJavaConsoletContactManager(e) {
-            window.location.href = 'https://www.tsumami.cooking:8080/landing'
+            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
         return (
             <div className="homePage">
