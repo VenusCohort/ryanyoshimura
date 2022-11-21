@@ -144,3 +144,8 @@ body{
     box-sizing: content-box;
 }
 
+#devInfo{
+    width: 100vw;
+    margin-bottom: 16vh;
+
+}
