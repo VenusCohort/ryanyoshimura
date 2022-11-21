@@ -32,6 +32,8 @@ export class Home extends Component{
                         {/*<div className="div1">Home Page!!!</div>*/}
                     </a>
                     <div className="mainContainer">
+                        <div>Ryan Yoshimura</div>
+                        <div>Full Stack Developer</div>
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
                         {/*<div><img className="reactLogo2"src="https://files.virgool.io/upload/users/24829/posts/m0a581jdk8zj/30ovzh9b1xr0.jpeg" alt="img"></img></div>*/}
                         <div id="project-grid-base">

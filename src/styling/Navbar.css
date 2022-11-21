@@ -64,12 +64,14 @@ body {
     /*border: 0.5px solid green;*/
     /*border-radius: 1rem;*/
     /*background-color: transparent;*/
+
     font-size: 2rem;
     margin-left: 1vw;
     justify-content: end;
     box-shadow: 0px -1px 1px 1px black;
-
 }
+
+
 #logo-circle{
 
 }
@@ -79,6 +81,3 @@ body {
     100% {transform: rotateY(360deg)}
 }
 
-#logo-text{
-    font-size: 5px;
-}
