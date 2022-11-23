@@ -3,6 +3,24 @@ import React, {Component} from 'react';
 import "../styling/Home.css";
 import surf from '../img/duck-dive.jpg'
 import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
+import linkedIn from '../img/linkedin.png'
+import github from '../img/github-signResized.png'
+import alumniPage from '../img/codeup-arrow.png'
+
+import AJAX from '../img/ajax.svg'
+import CSS from '../img/css-3.svg'
+import GIT from '../img/merge.svg'
+import GITHUB from '../img/github-skills.svg'
+import HTML from '../img/html-5.png'
+import JAVA from '../img/java.svg'
+import JS from '../img/java-script.svg'
+import JSON from '../img/json.svg'
+import MySql from '../img/mysql.svg'
+import REACT from '../img/react-logo.png'
+import SPRING from '../img/spring-logo.png'
+
+
+
 
 
 export class Home extends Component{
@@ -22,19 +40,13 @@ export class Home extends Component{
         return (
             <div className="homePage">
                 <header>
-                    {/*<img src={logo} className="App-logo" alt="logo" />*/}
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {/*<div className="div1">Home Page!!!</div>*/}
-                    </a>
+
                     <div className="mainContainer">
                         <div id="devInfo">
                             <div>Ryan Yoshimura</div>
-                            <div>Full Stack Developer</div>
+                            <div id="about-me">About me things here</div>
+
+                            {/*<div>Full stack dev</div>*/}
                         </div>
 
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
@@ -73,6 +85,33 @@ export class Home extends Component{
                                 </div>
                             </div>
                         </div>
+                        <div id="skills">
+
+                            <img src={AJAX} alt="img" className="skills-img"></img>
+                            <img src={CSS} alt="img" className="skills-img"></img>
+                            <img src={GIT} alt="img" className="skills-img"></img>
+                            <img src={GITHUB} alt="img" className="skills-img"></img>
+                            <img src={HTML} alt="img" className="skills-img"></img>
+                            <img src={JAVA} alt="img" className="skills-img"></img>
+                            <img src={JS} alt="img" className="skills-img"></img>
+                            <img src={JSON} alt="img" className="skills-img"></img>
+                            <img src={MySql} alt="img" className="skills-img"></img>
+                            <img src={REACT} alt="img" className="skills-img"></img>
+                            <img src={SPRING} alt="img" className="skills-img"></img>
+
+                        </div>
+                        <button id="links">
+                            <a href="https://linkedin.com/in/ryanskyoshimura" target="_blank">
+                                <img className="linkBtn" src={linkedIn} alt="img" />
+                            </a>
+                            <a href="https://github.com/RSKYoshi" target="_blank">
+                                <img className="linkBtn" src={github} alt="img" />
+                            </a>
+                            <a href="https://alumni.codeup.com/students/1605" target="_blank">
+                                <img className="linkBtn" src={alumniPage} alt="img" />
+                            </a>
+                        </button>
+
                     </div>
                 </header>
             </div>

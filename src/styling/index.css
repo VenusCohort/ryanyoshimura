@@ -19,12 +19,14 @@ html {
   /*	!*animation-iteration-count: infinite;*!*/
   /*	animation-iteration-count: 1;*/
   background: linear-gradient(145deg, rgb(68, 68, 68), rgb(0, 0, 0));
+  /*background-image: url("../img/ocean-breaking-wave.jpeg");*/
   /*filter: blur(8px)*/
   /*height: 100vh;*/
   min-height: 100vh;
   max-height: 100vh;
-  background-size: 100vw 100vh;
-  overflow: scroll;
+  background-size: 100vw 200vh;
+  overflow: hidden;
+  /*opacity: 5%;*/
 }
 /*div{*/
 /*	align-self: auto;*/

@@ -16,14 +16,32 @@ a{
     /*color: yellow;*/
 }
 .mainContainer{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*padding: 1rem;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*margin-top: 16vh;*/
+    /*z-index: 6;*/
+    /*width: 100vw;*/
+
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 16vh;
     z-index: 6;
     width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+
+
 }
 .reactLogo{
     height: 5rem;
@@ -146,6 +164,58 @@ body{
 
 #devInfo{
     width: 100vw;
-    margin-bottom: 16vh;
+    /*margin-bottom: 16vh;*/
+    display: block;
+    justify-content: center;
 
+    font: 3rem/1vh FontSiteSansBoldCondensed, Verdana, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    margin: 10rem;
+
+    /*mess with this effect for 3d transitioning, promising*/
+    /*text-shadow: -1px 41px 8px;*/
+
+
+}
+
+#links{
+    display: flex;
+    /*justify-content: center;*/
+    background: transparent;
+    border: transparent;
+    /* margin: 2px; */
+    width: 9vw;
+    justify-content: space-around;
+}
+
+.linkBtn{
+    height: 2rem;
+    width: auto;
+    /*box-shadow: 0 0 20px 0 rgba(255, 0, 153, 0.86);*/
+    /*border-radius: 15px;*/
+}
+.linkBtn:hover{
+    transform: translate(0, -2px);
+    /*box-shadow: 0 0 25px 0 hotpink;*/
+    transition: 50ms ease;}
+
+#skills{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#about-me{
+    margin: 3rem;
+}
+
+.skills-img{
+    height: 2rem;
+    width: auto;
+    margin-top: 3vh;
 }
