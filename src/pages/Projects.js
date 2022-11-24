@@ -1,8 +1,3 @@
-// import logo from "../logo.svg";
-// import React from "@types/react";
-// import React from 'react';
-// import logo from 'src/logo.svg';
-// import 'src/App.css';
 import React, {Component} from 'react';
 
 

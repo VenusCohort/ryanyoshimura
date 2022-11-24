@@ -2,8 +2,7 @@
 // import React from "@types/react";
 // import React from 'react';
 // import logo from '/src/logo.svg';
-// import '../App.css';
-// import '../App.css'
+
 import React, {Component} from 'react';
 
 export class Contact extends Component{

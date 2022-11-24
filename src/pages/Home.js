@@ -1,4 +1,3 @@
-import logo from '../logo.svg'
 import React, {Component} from 'react';
 import "../styling/Home.css";
 import surf from '../img/duck-dive.jpg'
@@ -37,6 +36,14 @@ export class Home extends Component{
         function goToLinkJavaConsoletContactManager(e) {
             window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
+        // const nav = document.querySelector(".nav")
+        // window.addEventListener("scroll", function(){
+        //     if(window.scrollY){
+        //         nav.classList.add("hideNav")
+        //     } else {
+        //         nav.classList.remove("hide")
+        //     }
+        // })
         return (
             <div className="homePage">
                 <header>

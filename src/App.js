@@ -1,5 +1,4 @@
 import React from 'react';
-import './styling/App.css';
 import {Home} from "./pages/Home";
 import Navbar from "./Navbar";
 import {Projects} from "./pages/Projects";
@@ -10,7 +9,7 @@ function App(){
     return (
     <>
         <Navbar />
-        <div className="container">
+        <div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />

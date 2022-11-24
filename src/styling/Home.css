@@ -30,11 +30,11 @@ a{
     padding: 1rem;
     justify-content: center;
     /* align-items: center; */
-    margin-top: 16vh;
+    /*margin-top: 16vh;*/
     z-index: 6;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    /*position: absolute;*/
     /* top: 0; */
     bottom: 0;
     left: 0;
@@ -178,8 +178,6 @@ body{
 
     /*mess with this effect for 3d transitioning, promising*/
     /*text-shadow: -1px 41px 8px;*/
-
-
 }
 
 #links{
