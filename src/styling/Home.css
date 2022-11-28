@@ -175,6 +175,8 @@ body{
     text-align: center;
     color: #fff;
     margin: 10rem;
+    transform: rotateX(52deg);
+
 
     /*mess with this effect for 3d transitioning, promising*/
     /*text-shadow: -1px 41px 8px;*/
