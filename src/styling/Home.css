@@ -43,22 +43,7 @@ a{
 
 
 }
-.reactLogo{
-    height: 5rem;
-    width: 5rem;
-}
-.reactLogo2{
-    height: 5rem;
-    width: 5rem;
-}
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 #project-grid-base{
     display: flex;
     flex: 0 0 95vw;
@@ -140,7 +125,7 @@ a{
 }
 .base-container{
     /* transform: rotateY(45deg); */
-    position: relative;
+    /*position: relative;*/
     height: 28rem;
     z-index: 8;
     /* transform: rotateY(-6deg); */
@@ -156,7 +141,21 @@ a{
 }
 body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
+    position: relative;
 }
+/*body::after{*/
+/*    background-color: white;*/
+/*    !*background-image: url("");*!*/
+/*    opacity: 0;*/
+/*    bottom: 0;*/
+/*    z-index: -1;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    transition: opacity 300ms;*/
+/*}*/
+
 .project-anchor-area{
    /*margin-left: 5vw;*/
     box-sizing: content-box;
@@ -178,6 +177,7 @@ body{
     transform: rotateX(52deg);
 
 
+
     /*mess with this effect for 3d transitioning, promising*/
     /*text-shadow: -1px 41px 8px;*/
 }
@@ -188,7 +188,7 @@ body{
     background: transparent;
     border: transparent;
     /* margin: 2px; */
-    width: 9vw;
+    width: 13vw;
     justify-content: space-around;
 }
 
@@ -207,15 +207,21 @@ body{
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    margin: 5rem;
 }
 
-#about-me{
-    margin: 3rem;
-}
+/*#about-me{*/
+/*    margin: 3rem;*/
+/*}*/
 
 .skills-img{
     height: 2rem;
     width: auto;
     margin-top: 3vh;
+}
+#devName{
+    /*display: none;*/
+}
+#devTitle{
+    /*display: none;*/
 }

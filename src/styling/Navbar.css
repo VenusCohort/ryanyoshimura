@@ -50,6 +50,8 @@ body {
     margin-top: 2vh;
     z-index: 9;
     position: fixed;
+    flex-wrap: wrap;
+    width: 1vw;
 
 }
 
@@ -57,7 +59,7 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
+    /*display: flex;*/
     gap: 1rem;
 }
 

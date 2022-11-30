@@ -36,6 +36,72 @@ export class Home extends Component{
         function goToLinkJavaConsoletContactManager(e) {
             window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
+
+
+
+
+
+
+        function devInfoText(){
+            // devInfo.innerHTML = "Ryan Yoshimura";
+            // devInfo.innerHTML = "Full Stack Developer";
+            // do {
+
+
+            let i = 1;                  //  set your counter to 1
+            function myLoop() {         //  create a loop function
+                setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+                    let devInfo = document.querySelector("#devInfo");
+                    //need to toggle texts here
+                    devInfo.innerHTML = "Ryan Yoshimura";
+                    if(devInfo.innerHTML === "Ryan Yoshimura"){
+                        devInfo.innerHTML = "Full Stack Developer"
+                    } else {
+                        devInfo.innerHTML = "Ryan Yoshimura"
+                    }
+
+                    i++;                    //  increment the counter
+                    if (i < 10) {           //  if the counter < 10, call the loop function
+                        myLoop();             //  ..  again which will trigger another
+                    }                       //  ..  setTimeout()
+                }, 2000)
+            }
+
+            myLoop();                   //  start the loop
+        }
+
+
+
+
+
+
+        function devInfoTransitions(){
+            setInterval(devInfoText,2000)
+        }
+        window.setTimeout(devInfoTransitions,200);
+
+        //uncomment below for many bg image transitions
+        // function changePicture(e){
+            //put all images here, with each separated by a set time
+            //img1
+            //5
+            //img2
+            //img3
+        // }
+        // function backgroundTransition(e){
+        //     //target bg here
+        //     //need to set a timer for transition
+        //     //if bg=currentBG, change it to the next one
+        //     //repeat the cycle infinitely
+        //     //or just have one bg, and do a slight zoom/movement like the japanese website
+        //     //perhaps do an ocean image, then simulate a slow panning effect
+        //
+        //     let body = document.querySelector("body");
+        //     // body.addEventListener("",)
+        //     setInterval(changePicture,100)
+        // }
+
+
         // const nav = document.querySelector(".nav")
         // window.addEventListener("scroll", function(){
         //     if(window.scrollY){
@@ -49,12 +115,8 @@ export class Home extends Component{
                 <header>
 
                     <div className="mainContainer">
-                        <div id="devInfo">
-                            <div>Ryan Yoshimura</div>
-                            <div id="about-me">About me things here</div>
-
-                            {/*<div>Full stack dev</div>*/}
-                        </div>
+                        {/*//every 3 seconds, change out the text here */}
+                        <div id="devInfo"></div>
 
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
                         {/*<div><img className="reactLogo2"src="https://files.virgool.io/upload/users/24829/posts/m0a581jdk8zj/30ovzh9b1xr0.jpeg" alt="img"></img></div>*/}
@@ -94,6 +156,8 @@ export class Home extends Component{
                         </div>
                         <div id="skills">
 
+                            {/*idea!! on hover, display icons in a movable sphere */}
+
                             <img src={AJAX} alt="img" className="skills-img"></img>
                             <img src={CSS} alt="img" className="skills-img"></img>
                             <img src={GIT} alt="img" className="skills-img"></img>
@@ -107,6 +171,7 @@ export class Home extends Component{
                             <img src={SPRING} alt="img" className="skills-img"></img>
 
                         </div>
+                        <br/>
                         <button id="links">
                             <a href="https://linkedin.com/in/ryanskyoshimura" target="_blank">
                                 <img className="linkBtn" src={linkedIn} alt="img" />
