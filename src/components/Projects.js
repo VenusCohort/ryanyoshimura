@@ -5,7 +5,7 @@ export class Projects extends Component{
     render() {
         return (
 
-            <div>
+            <div id="projects">
                 <div>tsumami</div>
                 <div>konami</div>
                 <div>weathermap</div>

@@ -17,6 +17,7 @@ import JSON from '../img/json.svg'
 import MySql from '../img/mysql.svg'
 import REACT from '../img/react-logo.png'
 import SPRING from '../img/spring-logo.png'
+let devInfo;
 
 
 
@@ -43,42 +44,44 @@ export class Home extends Component{
 
 
         function devInfoText(){
+            devInfo = document.querySelector("#devInfo");
+            devInfo.style = ""
+            devInfo.innerHTML = "Yoshimura Designs";
+
+
+
             // devInfo.innerHTML = "Ryan Yoshimura";
             // devInfo.innerHTML = "Full Stack Developer";
             // do {
-
-
-            let i = 1;                  //  set your counter to 1
+            // let i = 1;                  //  set your counter to 1
             function myLoop() {         //  create a loop function
                 setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-                    let devInfo = document.querySelector("#devInfo");
+                    // devInfo = document.querySelector("#devInfo");
                     //need to toggle texts here
-                    devInfo.innerHTML = "Ryan Yoshimura";
-                    if(devInfo.innerHTML === "Ryan Yoshimura"){
-                        devInfo.innerHTML = "Full Stack Developer"
-                    } else {
-                        devInfo.innerHTML = "Ryan Yoshimura"
-                    }
+                    setTimeout(function(e){
+                        // devInfo.style = "color: yellow"
+                        devInfo.innerHTML = "Full Stack Developer";
 
-                    i++;                    //  increment the counter
-                    if (i < 10) {           //  if the counter < 10, call the loop function
-                        myLoop();             //  ..  again which will trigger another
-                    }                       //  ..  setTimeout()
-                }, 2000)
+                    },2000) //after 2 seconds, change text
+                    // if(devInfo.innerHTML === "Ryan Yoshimura"){
+                    //     devInfo.innerHTML = "Full Stack Developer"
+                    // } else {
+                    //     devInfo.innerHTML = "Ryan Yoshimura"
+                    // }
+
+                    // i++;                    //  increment the counter
+                    // if (i < 10) {           //  if the counter < 10, call the loop function
+                    //     myLoop();             //  ..  again which will trigger another
+                    // }                       //  ..  setTimeout()
+                }, 250)
             }
-
             myLoop();                   //  start the loop
         }
 
-
-
-
-
-
         function devInfoTransitions(){
-            setInterval(devInfoText,2000)
+            setInterval(devInfoText,5500) //every 4 seconds, run myLoop
         }
-        window.setTimeout(devInfoTransitions,200);
+        window.setTimeout(devInfoTransitions,0); //on window load, after x sec, start devInfoTransitions(which starts a 4 sec timer)
 
         //uncomment below for many bg image transitions
         // function changePicture(e){
@@ -115,7 +118,7 @@ export class Home extends Component{
                 <header>
 
                     <div className="mainContainer">
-                        {/*//every 3 seconds, change out the text here */}
+                        {/*//every x seconds, change out the text here */}
                         <div id="devInfo"></div>
 
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
