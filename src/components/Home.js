@@ -45,8 +45,8 @@ export class Home extends Component{
 
         function devInfoText(){
             devInfo = document.querySelector("#devInfo");
-            devInfo.style = ""
             devInfo.innerHTML = "Yoshimura Designs";
+
 
 
 
@@ -61,6 +61,8 @@ export class Home extends Component{
                     setTimeout(function(e){
                         // devInfo.style = "color: yellow"
                         devInfo.innerHTML = "Full Stack Developer";
+
+
 
                     },2000) //after 2 seconds, change text
                     // if(devInfo.innerHTML === "Ryan Yoshimura"){
