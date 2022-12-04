@@ -37,15 +37,14 @@ export class Home extends Component{
         function goToLinkJavaConsoletContactManager(e) {
             window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
-
-
-
-
-
+        window.setTimeout(devInfoTransitions,0); //on window load, after x sec, start devInfoTransitions(which starts a 4 sec timer)
 
         function devInfoText(){
             devInfo = document.querySelector("#devInfo");
+            devInfo.style = "animation: fadeIn 2s;"
             devInfo.innerHTML = "Yoshimura Designs";
+            // devInfo.style = "animation: fadeOut 2s;"
+
 
 
 
@@ -55,12 +54,14 @@ export class Home extends Component{
             // do {
             // let i = 1;                  //  set your counter to 1
             function myLoop() {         //  create a loop function
-                setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+                setTimeout(function() {   //  call x sec setTimeout when the loop is called
                     // devInfo = document.querySelector("#devInfo");
                     //need to toggle texts here
                     setTimeout(function(e){
                         // devInfo.style = "color: yellow"
+                        devInfo.style = "animation: fadeOut 2s;"
                         devInfo.innerHTML = "Full Stack Developer";
+
 
 
 
@@ -75,7 +76,7 @@ export class Home extends Component{
                     // if (i < 10) {           //  if the counter < 10, call the loop function
                     //     myLoop();             //  ..  again which will trigger another
                     // }                       //  ..  setTimeout()
-                }, 250)
+                }, 300)
             }
             myLoop();                   //  start the loop
         }
@@ -83,7 +84,6 @@ export class Home extends Component{
         function devInfoTransitions(){
             setInterval(devInfoText,5500) //every 4 seconds, run myLoop
         }
-        window.setTimeout(devInfoTransitions,0); //on window load, after x sec, start devInfoTransitions(which starts a 4 sec timer)
 
         //uncomment below for many bg image transitions
         // function changePicture(e){
