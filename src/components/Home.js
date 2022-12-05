@@ -130,7 +130,10 @@ export class Home extends Component{
                                 <div id="grid-base1" className="grid-base">
                                     <img src={tsumamiLandingBg} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkTsumami}>
-                                        <div className="project-text"><h2>tsUmami</h2></div>
+                                        <div className="project-text">
+                                            <h2>tsUmami</h2>
+                                            <p><h4>meal planner</h4></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

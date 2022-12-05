@@ -51,6 +51,8 @@ a{
     position: relative;
     z-index: 7;
     justify-content: space-evenly;
+    margin-top: 16vh;
+
     /* border: #38BDDF solid 1px;
 }
 #grid-base1 {
@@ -130,7 +132,10 @@ a{
     z-index: 8;
     /* transform: rotateY(-6deg); */
     /*transform: rotate3d(1, 1, 1, 18deg);*/
-    transform: rotate3d(66, 14, 3, -25deg);
+    /*transform: rotate3d(66, 14, 3, -25deg);*/
+    transform: rotate3d(-8, 23, 97, 38deg);
+    /*transform: rotate3d(-8, 23, 97, -38deg);*/
+
 }
 .project-text{
     color: #38BDDF;
@@ -138,7 +143,7 @@ a{
     justify-content: center;
     align-content: center;
     margin-top: 15rem;
-    text-shadow: -1px 41px 8px;
+    text-shadow: -1px 71px 28px
 
 }
 body{
