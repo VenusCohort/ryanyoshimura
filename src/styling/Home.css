@@ -79,7 +79,9 @@ a{
 .grid-base{
     width: 34.9rem;
     height: 24.3rem;
-    background: #D62D2D;
+    /*background: #D62D2D;*/
+    /*background: #29a675;*/
+    background: #25e5fffc;
     /*margin-right: 7rem;*/
     margin-bottom: -4rem;
     transform: rotateX(23deg);
@@ -133,7 +135,8 @@ a{
     /* transform: rotateY(-6deg); */
     /*transform: rotate3d(1, 1, 1, 18deg);*/
     /*transform: rotate3d(66, 14, 3, -25deg);*/
-    transform: rotate3d(-8, 23, 97, 38deg);
+    /*transform: rotate3d(-8, 23, 97, 38deg);*/
+    transform: rotate3d(-5, -48, 68, -22deg)
     /*transform: rotate3d(-8, 23, 97, -38deg);*/
 
 }
@@ -180,7 +183,8 @@ body{
     letter-spacing: 1px;
     text-align: center;
     /*color: #fff;*/
-    color: #38BDDF;
+    /*color: #38BDDF;*/
+    color: #25e5fffc;
     margin: 10rem;
     transform: rotateX(52deg);
     /*mess with this effect for 3d transitioning, promising*/

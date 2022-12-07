@@ -65,7 +65,8 @@ body {
 
 .nav a {
     /*color: inherit;*/
-    color: #38BDDF;
+    /*color: #38BDDF;*/
+    color: #25e5fffc;
     text-decoration: none;
     height: 100%;
     display: flex;

@@ -131,7 +131,7 @@ export class Home extends Component{
                                     <img src={tsumamiLandingBg} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkTsumami}>
                                         <div className="project-text">
-                                            <h2>tsUmami</h2>
+                                            <h2>TSUMAMI</h2>
                                             <p><h4>meal planner</h4></p>
                                         </div>
                                     </div>
@@ -194,7 +194,9 @@ export class Home extends Component{
 
                     </div>
                 </header>
+                <script src="jquery-3.6.1.min.js"></script>
             </div>
+
         );
     }
 }
