@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import "../styling/Home.css";
 import surf from '../img/duck-dive.jpg'
 import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
+import konami from '../img/konamilogo2.webp'
+import weatherBg from '../img/weather-background.jpg'
+import coffee from '../img/coffeeBG.png'
+
 import linkedIn from '../img/linkedin.png'
 import github from '../img/github-signResized.png'
 import alumniPage from '../img/codeup-arrow.png'
@@ -29,13 +33,13 @@ export class Home extends Component{
             window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
         }
         function goToLinkWeatherMap(e) {
-            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
+            window.open('https://chase-forestello.github.io/weathermap/', '_blank', "noopener noreferrer");
         }
         function goToLinkKonamiCode(e) {
-            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
+            window.open('https://rskyoshi.github.io/konami-code/', '_blank', "noopener noreferrer");
         }
-        function goToLinkJavaConsoletContactManager(e) {
-            window.open('https://www.tsumami.cooking:8080/landing', '_blank', "noopener noreferrer");
+        function goToLinkCoffeeProject(e) {
+            window.open(' https://rskyoshi.github.io/coffee-benjamin-ryan/', '_blank', "noopener noreferrer");
         }
         window.setTimeout(devInfoTransitions,0); //on window load, after x sec, start devInfoTransitions(which starts a 4 sec timer)
 
@@ -139,7 +143,7 @@ export class Home extends Component{
                             </div>
                             <div className="base-container">
                                 <div id="grid-base2" className="grid-base">
-                                    <img src={surf} alt="img" className="projects-img"/>
+                                    <img src={weatherBg} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkWeatherMap}>
                                         <div className="project-text"><h2>WEATHERMAP</h2></div>
                                     </div>
@@ -147,7 +151,7 @@ export class Home extends Component{
                             </div>
                             <div className="base-container">
                                 <div id="grid-base3" className="grid-base">
-                                    <img src={surf} alt="img" className="projects-img"/>
+                                    <img src={konami} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkKonamiCode}>
                                         <div className="project-text"><h2>KONAMI-CODE</h2></div>
                                     </div>
@@ -155,9 +159,9 @@ export class Home extends Component{
                             </div>
                             <div className="base-container">
                                 <div id="grid-base4" className="grid-base">
-                                    <img src={surf} alt="img" className="projects-img" />
-                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkJavaConsoletContactManager}>
-                                        <div className="project-text"><h2>JAVA CONSOLE CONTACT MANAGER</h2></div>
+                                    <img src={coffee} alt="img" className="projects-img" />
+                                    <div className="projects-img-overlay project-text-color" onClick={goToLinkCoffeeProject}>
+                                        <div className="project-text"><h2>COFFEE-SELECTOR</h2></div>
                                     </div>
                                 </div>
                             </div>

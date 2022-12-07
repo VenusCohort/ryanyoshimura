@@ -108,7 +108,8 @@ a{
     margin-top: -32.6rem;
     padding: 1px;
     z-index: 9;
-    border: 1px solid #38BDDF;
+    /*border: 1px solid #38BDDF;*/
+    border: 1px solid #25e5fffc;
     transition: ease-out 0.3s;
     cursor: pointer;
 }

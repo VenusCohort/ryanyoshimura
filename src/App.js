@@ -8,6 +8,7 @@ import {Route, Routes} from "react-router-dom"
 function App(){
     return (
     <>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <Navbar />
         <div>
             <Routes>
