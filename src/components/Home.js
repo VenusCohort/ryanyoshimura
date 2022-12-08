@@ -21,6 +21,10 @@ import JSON from '../img/json.svg'
 import MySql from '../img/mysql.svg'
 import REACT from '../img/react-logo.png'
 import SPRING from '../img/spring-logo.png'
+
+import {useState} from "react";
+import Fader from "./Fader";
+
 let devInfo;
 
 
@@ -45,8 +49,11 @@ export class Home extends Component{
 
         function devInfoText(){
             devInfo = document.querySelector("#devInfo");
-            devInfo.style = "animation: fadeIn 2s;"
-            devInfo.innerHTML = "Yoshimura Designs";
+            // devInfo.style = "animation: fadeIn 2s;"
+            // devInfo.innerHTML = "Yoshimura Designs";
+
+
+
             // devInfo.style = "animation: fadeOut 2s;"
 
 
@@ -63,8 +70,8 @@ export class Home extends Component{
                     //need to toggle texts here
                     setTimeout(function(e){
                         // devInfo.style = "color: yellow"
-                        devInfo.style = "animation: fadeOut 2s;"
-                        devInfo.innerHTML = "Full Stack Developer";
+                        // devInfo.style = "animation: fadeOut 2s;"
+                        // devInfo.innerHTML = "Full Stack Developer";
 
 
 
@@ -84,6 +91,14 @@ export class Home extends Component{
             }
             myLoop();                   //  start the loop
         }
+
+
+
+
+
+
+
+
 
         function devInfoTransitions(){
             setInterval(devInfoText,5500) //every 4 seconds, run myLoop
@@ -125,8 +140,9 @@ export class Home extends Component{
 
                     <div className="mainContainer">
                         {/*//every x seconds, change out the text here */}
-                        <div id="devInfo"></div>
-
+                        <div id="devInfo">
+                            <Fader text = "test"/>
+                        </div>
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
                         {/*<div><img className="reactLogo2"src="https://files.virgool.io/upload/users/24829/posts/m0a581jdk8zj/30ovzh9b1xr0.jpeg" alt="img"></img></div>*/}
                         <div id="project-grid-base">

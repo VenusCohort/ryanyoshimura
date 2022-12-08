@@ -209,6 +209,7 @@ body{
     /* margin: 2px; */
     width: 13vw;
     justify-content: space-around;
+    margin-top: 3rem;
 }
 
 .linkBtn{
@@ -220,7 +221,8 @@ body{
 .linkBtn:hover{
     transform: translate(0, -2px);
     /*box-shadow: 0 0 25px 0 hotpink;*/
-    transition: 50ms ease;}
+    transition: 50ms ease;
+}
 
 #skills{
     width: 100vw;
@@ -228,6 +230,8 @@ body{
     justify-content: space-around;
     margin: 5rem;
 }
+
+
 
 /*#about-me{*/
 /*    margin: 3rem;*/
@@ -238,6 +242,13 @@ body{
     width: auto;
     margin-top: 3vh;
 }
+
+.skills-img:hover{
+    transform: translate(0, -2px);
+    /*box-shadow: 0 0 25px 0 hotpink;*/
+    transition: 50ms ease;
+}
+
 #devName{
     /*display: none;*/
 }
