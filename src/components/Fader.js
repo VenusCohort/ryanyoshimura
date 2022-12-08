@@ -23,7 +23,7 @@ function Fader({text}) {
             setTimeout(function() {
                 setTimeout(function(){
                     setChangeName(prevState => !prevState)
-                },2000) //after 2 seconds, change text
+                },4000) //after x seconds, change text
             }, 300)
         }
         myLoop();                   //  start the loop

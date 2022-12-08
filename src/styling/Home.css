@@ -192,14 +192,7 @@ body{
     /*text-shadow: -1px 41px 8px;*/
     /*animation: fadeIn 5s;*/
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes fadeOut {
-    99% { opacity: 1; }
-    0% { opacity: 0; }
-}
+
 
 #links{
     display: flex;
@@ -229,6 +222,10 @@ body{
     display: flex;
     justify-content: space-around;
     margin: 5rem;
+    /* border: 1px solid white; */
+    /* overflow: scroll; */
+    /* position: relative; */
+    height: 10vh;
 }
 
 
@@ -241,12 +238,16 @@ body{
     height: 2rem;
     width: auto;
     margin-top: 3vh;
+    transition: ease-out 0.3s;
+
 }
 
 .skills-img:hover{
-    transform: translate(0, -2px);
-    /*box-shadow: 0 0 25px 0 hotpink;*/
-    transition: 50ms ease;
+    transform: translate(-1rem, -1rem);
+    /* box-shadow: 0 0 25px 0 hotpink; */
+    transition: ease-in-out 0.3s;
+    height: 5rem;
+    width: auto;
 }
 
 #devName{
@@ -257,9 +258,24 @@ body{
 }
 
 .fade-in {
-    transition: opacity 1s ease;
+    /*transition: opacity 2s ease;*/
+    animation: fade-in 5s;
 }
 .fade-out {
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 5s ease;
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-out {
+    99% { opacity: 1; }
+    0% { opacity: 0; }
+}
+
+.img-container{
+    /*position: absolute;*/
+    height: 5vh;
+    width: 2vw;
 }

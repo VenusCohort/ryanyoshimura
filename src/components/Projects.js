@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import "../styling/Projects.css";
+
 
 
 export class Projects extends Component{

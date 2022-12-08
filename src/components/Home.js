@@ -141,7 +141,7 @@ export class Home extends Component{
                     <div className="mainContainer">
                         {/*//every x seconds, change out the text here */}
                         <div id="devInfo">
-                            <Fader text = "test"/>
+                            <Fader/>
                         </div>
                         {/*<div><img className="reactLogo" src={logo} alt="img"></img></div>*/}
                         {/*<div><img className="reactLogo2"src="https://files.virgool.io/upload/users/24829/posts/m0a581jdk8zj/30ovzh9b1xr0.jpeg" alt="img"></img></div>*/}
@@ -185,18 +185,40 @@ export class Home extends Component{
                         <div id="skills">
 
                             {/*idea!! on hover, display icons in a movable sphere */}
+                            <div className="img-container">
+                                <img src={AJAX} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={CSS} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={GIT} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={GITHUB} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={HTML} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={JAVA} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={JS} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={JSON} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={MySql} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={REACT} alt="img" className="skills-img"></img>
+                            </div>
+                            <div className="img-container">
+                                <img src={SPRING} alt="img" className="skills-img"></img>
+                            </div>
 
-                            <img src={AJAX} alt="img" className="skills-img"></img>
-                            <img src={CSS} alt="img" className="skills-img"></img>
-                            <img src={GIT} alt="img" className="skills-img"></img>
-                            <img src={GITHUB} alt="img" className="skills-img"></img>
-                            <img src={HTML} alt="img" className="skills-img"></img>
-                            <img src={JAVA} alt="img" className="skills-img"></img>
-                            <img src={JS} alt="img" className="skills-img"></img>
-                            <img src={JSON} alt="img" className="skills-img"></img>
-                            <img src={MySql} alt="img" className="skills-img"></img>
-                            <img src={REACT} alt="img" className="skills-img"></img>
-                            <img src={SPRING} alt="img" className="skills-img"></img>
 
                         </div>
                         <br/>
