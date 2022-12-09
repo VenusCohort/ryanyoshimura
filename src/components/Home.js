@@ -151,8 +151,8 @@ export class Home extends Component{
                                     <img src={tsumamiLandingBg} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkTsumami}>
                                         <div className="project-text">
-                                            <h2>TSUMAMI</h2>
-                                            <p><h4>meal planner</h4></p>
+                                            <h2 className="project-title-text">TSUMAMI</h2>
+                                            <p><h4>Meal planning app with recipe search and macros</h4></p>
                                         </div>
                                     </div>
                                 </div>
@@ -161,7 +161,10 @@ export class Home extends Component{
                                 <div id="grid-base2" className="grid-base">
                                     <img src={weatherBg} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkWeatherMap}>
-                                        <div className="project-text"><h2>WEATHERMAP</h2></div>
+                                        <div className="project-text">
+                                            <h2 className="project-title-text">WEATHERMAP</h2>
+                                            <p><h4>Weather forecast app with real-time data</h4></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +172,10 @@ export class Home extends Component{
                                 <div id="grid-base3" className="grid-base">
                                     <img src={konami} alt="img" className="projects-img"/>
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkKonamiCode}>
-                                        <div className="project-text"><h2>KONAMI-CODE</h2></div>
+                                        <div className="project-text">
+                                            <h2 className="project-title-text">KONAMI-CODE</h2>
+                                            <p><h4>The original cheat-code for games!</h4></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +183,10 @@ export class Home extends Component{
                                 <div id="grid-base4" className="grid-base">
                                     <img src={coffee} alt="img" className="projects-img" />
                                     <div className="projects-img-overlay project-text-color" onClick={goToLinkCoffeeProject}>
-                                        <div className="project-text"><h2>COFFEE-SELECTOR</h2></div>
+                                        <div className="project-text">
+                                            <h2 className="project-title-text">COFFEE-SELECTOR</h2>
+                                            <p><h4>Simulate coffee grade selections</h4></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

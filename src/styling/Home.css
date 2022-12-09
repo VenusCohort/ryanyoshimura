@@ -108,10 +108,12 @@ a{
     margin-top: -32.6rem;
     padding: 1px;
     z-index: 9;
-    /*border: 1px solid #38BDDF;*/
+    /* border: 1px solid #38BDDF; */
     border: 1px solid #25e5fffc;
     transition: ease-out 0.3s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .projects-img-overlay:hover{
     background-color: transparent;
@@ -142,13 +144,21 @@ a{
 
 }
 .project-text{
+    /*color: #38BDDF;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*margin-top: 15rem;*/
+    /*text-shadow: -1px 71px 28px*/
+
     color: #38BDDF;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 15rem;
-    text-shadow: -1px 71px 28px
-
+    /* margin-top: 15rem; */
+    text-shadow: -1px 71px 28px;
+    flex-wrap: wrap;
+    width: 17vw;
 }
 body{
     font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',Meiryo,メイリオ,sans-serif;
@@ -278,4 +288,10 @@ body{
     /*position: absolute;*/
     height: 5vh;
     width: 2vw;
+}
+.project-title-text{
+    overflow: visible;
+    width: 16vw;
+    height: 0vh;
+    margin-left: -2vw;
 }
