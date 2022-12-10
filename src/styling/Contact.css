@@ -1,3 +1,8 @@
+
+
+#contact-background{
+    /*background-image: url('../img/moving-water-gif-bg.gif');*/
+}
 #main-container{
     display: flex;
     height: 100vh;
@@ -32,7 +37,9 @@
     border: 3px solid grey;
     border-radius: 7px;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 5%);
+    background-color: rgba(128, 128, 128, 30%);
+    background-image: url('../img/moon-swirl-gif.gif');
+    object-fit: cover;
 }
 label{
     display: block;
