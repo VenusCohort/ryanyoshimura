@@ -1,4 +1,61 @@
-#infoPage{
-    color: white;
-    position: fixed;
+#main-container{
+    display: flex;
+    height: 100vh;
+    width: 50vw;
 }
+/*#container-etc{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 50vh;*/
+/*    width: 25vw;*/
+/*    margin: 7rem;*/
+/*}*/
+#yoshi-img{
+    height: 10rem;
+    width: auto;
+    border-radius: 30px;
+}
+#infoContainer{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 7vh;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    /* margin-top: 5vh; */
+    /* position: fixed; */
+    margin-left: 12vw;
+}
+#email-container{
+    border: 3px solid grey;
+    border-radius: 7px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 5%);
+}
+label{
+    display: block;
+    margin-bottom: .2em;
+}
+#submit-button-wrapper{
+    height: 5vh;
+    width: 7vw;
+}
+button {
+    background: blueviolet;
+    padding: 0.8em 1em;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 7px;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    /*border: 1px solid green; */
+    border-radius: 7px;
+    box-shadow: 0px 3px 12px 0px cyan;
+    transform: translate(0px, -2px);
+    transition: .2s ease-in-out;
+}
+
+
