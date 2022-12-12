@@ -137,9 +137,9 @@ export class Home extends Component{
         return (
             <div className="homePage">
                 <header>
-
                     <div className="mainContainer">
                         {/*//every x seconds, change out the text here */}
+
                         <div id="devInfo">
                             <Fader/>
                         </div>
@@ -232,13 +232,13 @@ export class Home extends Component{
                         </div>
                         <br/>
                         <button id="links">
-                            <a href="https://linkedin.com/in/ryanskyoshimura" target="_blank">
+                            <a href="https://linkedin.com/in/ryanskyoshimura" target="_blank" rel="noopener noreferrer">
                                 <img className="linkBtn" src={linkedIn} alt="img" />
                             </a>
-                            <a href="https://github.com/RSKYoshi" target="_blank">
+                            <a href="https://github.com/RSKYoshi" target="_blank" rel="noopener noreferrer">
                                 <img className="linkBtn" src={github} alt="img" />
                             </a>
-                            <a href="https://alumni.codeup.com/students/1605" target="_blank">
+                            <a href="https://alumni.codeup.com/students/1605" target="_blank" rel="noopener noreferrer">
                                 <img className="linkBtn" src={alumniPage} alt="img" />
                             </a>
                         </button>

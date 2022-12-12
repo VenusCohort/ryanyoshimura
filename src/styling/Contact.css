@@ -2,11 +2,14 @@
 
 #contact-background{
     /*background-image: url('../img/moving-water-gif-bg.gif');*/
+    background-image: url('../img/glassy-wave-sunset.jpeg');
+
 }
 #main-container{
     display: flex;
     height: 100vh;
     width: 50vw;
+
 }
 /*#container-etc{*/
 /*    display: flex;*/
@@ -36,10 +39,22 @@
 #email-container{
     border: 3px solid grey;
     border-radius: 7px;
-    padding: 1rem;
+    /*padding: 1rem;*/
+    padding-left: 1rem;
+    padding-right: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: rgba(128, 128, 128, 30%);
-    background-image: url('../img/moon-swirl-gif.gif');
+    /*background-image: url('../img/glassy-wave-sunset.jpeg');*/
     object-fit: cover;
+}
+.input-form-lengths{
+    width: 14rem;
+    overflow: visible;
+}
+#message-area{
+    width: 21rem;
+    height: 10rem;
 }
 label{
     display: block;
@@ -50,7 +65,7 @@ label{
     width: 7vw;
 }
 button {
-    background: blueviolet;
+    background: lightslategrey;
     padding: 0.8em 1em;
     color: whitesmoke;
     border: 0;
