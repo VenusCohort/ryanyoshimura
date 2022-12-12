@@ -15,7 +15,7 @@ function App(){
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 {/*why is this /info and how to change it to /contact*/}
-                <Route path="/info" element={<Contact />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </div>
         </>

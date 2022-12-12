@@ -6,10 +6,8 @@ import yoshiProfilePic from '../img/ryan.png'
 export class Contact extends Component{
 
     render() {
-        const sendGridApi = require('@sendgrid/mail');
-        sendGridApi.setApiKey{
-            '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'
-        }
+        // const sendGridApi = require('@sendgrid/mail');
+        // ${sendGridApi}
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
         }

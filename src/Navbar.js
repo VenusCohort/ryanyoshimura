@@ -20,8 +20,8 @@ export default function Navbar (){
                 </div>
             </Link>
             <ul>
-                <CustomLink to="/projects">Projects</CustomLink>
-                <CustomLink to="/info">Contact</CustomLink>
+                {/*<CustomLink to="/projects">Projects</CustomLink>*/}
+                <CustomLink to="/contact">Contact</CustomLink>
             </ul>
         </nav>
     )
