@@ -10,9 +10,6 @@ import {render} from "react-dom";
 // export class Contact extends Component{
 export const Contact = () => {
 
-    // render() {
-        // const sendGridApi = require('@sendgrid/mail');
-        // ${sendGridApi}
         function btnAction(){
             // TODO: need to target button using virtual DOM for a sweet css effect.
         }
