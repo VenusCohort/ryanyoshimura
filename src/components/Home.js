@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import "../styling/Home.css";
-import surf from '../img/duck-dive.jpg'
 import tsumamiLandingBg from '../img/landingPage-bg.jpeg'
 import konami from '../img/konamilogo2.webp'
 import weatherBg from '../img/weather-background.jpg'
@@ -22,10 +21,9 @@ import MySql from '../img/mysql.svg'
 import REACT from '../img/react-logo.png'
 import SPRING from '../img/spring-logo.png'
 
-import {useState} from "react";
 import Fader from "./Fader";
 
-let devInfo;
+// let devInfo;
 
 
 
@@ -48,7 +46,7 @@ export class Home extends Component{
         window.setTimeout(devInfoTransitions,0); //on window load, after x sec, start devInfoTransitions(which starts a 4 sec timer)
 
         function devInfoText(){
-            devInfo = document.querySelector("#devInfo");
+            // devInfo = document.querySelector("#devInfo");
             // devInfo.style = "animation: fadeIn 2s;"
             // devInfo.innerHTML = "Yoshimura Designs";
 

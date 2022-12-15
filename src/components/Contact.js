@@ -3,7 +3,7 @@ import "../styling/Contact.css";
 import yoshiProfilePic from '../img/ryan.png'
 import emailjs from '@emailjs/browser';
 import React, {useRef} from 'react';
-import {render} from "react-dom";
+// import {render} from "react-dom";
 
 
 

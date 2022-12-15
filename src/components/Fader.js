@@ -1,16 +1,17 @@
 import React, {Component} from 'react';
 import {useState, useEffect} from "react";
-import {PropTypes} from 'prop-types';
+// import {PropTypes} from 'prop-types';
 import "../styling/Home.css";
 
 
-function Fader({text}) {
+function Fader({text}){
 
     console.log(text)
-    // const array = ["Ryan Yoshimura", "Full Stack Developer"];
+    console.log(Component)
 
+    // const array = ["Ryan Yoshimura", "Full Stack Developer"];
     //for css fade transitions
-    const [fadeProp, setFadeProp] = useState({
+    const [fadeProp] = useState({
         fade: 'fade-in',
     });
 

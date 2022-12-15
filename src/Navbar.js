@@ -11,6 +11,8 @@ export default function Navbar (){
         // text.style.margin.left("1vw");
         // text.style.justifyContent("end");
         // text.style.boxShadow("box-shadow: 0px -1px 1px 1px black");
+        console.log(Component)
+
     }
     return (
         <nav className="nav">
