@@ -29,16 +29,22 @@ export const Contact = () => {
                 });
         };
         return (
+            // <div id="contact-background">
             <div id="contact-background">
-                <main id="main-container">
+            <main id="main-container">
                     <div id="infoContainer">
                         {/*<div id="container-etc"></div>*/}
                         <form ref={form} onSubmit={sendEmail}>
-                            <img id="yoshi-img" src={yoshiProfilePic} alt="img" />
+                            <div id="outer-profile-img-box">
+                                <div id="profile-img-box">
+                                    <img id="yoshi-img" src={yoshiProfilePic} alt="img" />
+                                </div>
+                            </div>
+
                             <br/><br/>
-                            <span>
-                                Hi There! Send me an email and I will get right back to you. <br/><div>Mahalo!</div>
-                            </span>
+                            <div id="about-me-text">
+                                Hi There! Send me an email and I will get right back to you. <br/> Mahalo!
+                            </div>
                             <br/><br/>
                             <div id="email-container">
                                 <span>
