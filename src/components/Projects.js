@@ -13,7 +13,6 @@ export class Projects extends Component{
                 <div>weathermap</div>
                 <div>java contact manager</div>
             </div>
-
     )
     }
 }
